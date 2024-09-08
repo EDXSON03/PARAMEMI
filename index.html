@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta content="width=device-width, inical-scale=1.0"
+    title="¿Quieres pasar el resto de tu vida conmigo?"><title="">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: skyblue;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+         .container {
+         text-align: center;
+         max-width: 1200px; /* Puedes ajustar este valor según tus preferencias */
+         margin: 0 auto;
+        padding: 20px;
+        }
+        h1 {
+            font-size: 60px;
+            color: black;
+            font-style: italic ; 
+            margin: 0; /* Elimina el margen vertical */
+        }
+        h2 {
+            font-size: 20px;
+            color: rgb(58, 58, 58);
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 500px;
+            margin: 0 auto; 
+        }
+        #button {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #button {
+            margin: 30px;
+            padding: 20px, 30px;
+            border: none;
+            transition: background-color 0.3s;
+            color: black;
+            cursor: pointer;
+            font-size: 70px;
+            font-family: impact , Georgia, Times, 'Times New Roman';
+        }
+
+        #movingButton {
+             position: absolute;
+             width: 190px;
+             height: 200px;
+             background: red;
+             border: none;
+             border-radius: 15px;
+             color: black;
+             font-size: 70px;
+             font-family: impact , Georgia, Times, 'Times New Roman';
+             cursor: pointer;
+         }
+        video {
+            margin-top: 30px;
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(5, 5, 5, 0);
+        }
+      
+        </style>
+        <script>
+            function accionparacuandoelladigaquesi() {
+                alert("!ahora estamos juntos el resto de tu vida¡");
+            }      
+            function mueveelboton(){
+                const width = window.innerWidth;
+                const heigth = window.innerheigth;
+
+                const newWidth = math.random() * width;
+                const newHeigth = Math.random() * heigth;
+
+                const btnNo = document.getElementById("btnNo");
+                btnNo.style.position = "absolute";
+                btnNo.style.left = newWidth + "px";
+                btnNo.style.top = newHeigth + "px";
+            }
+            </script>
+          </head>
+        </body>
+             <div class="container">
+            <h1>¿Quieres pasar el resto de tu vida conmigo?</h1>
+            <h2>Si aceptas no habra vuelta atras</h2>
+            <div id="button">
+                <buttono onclick="accionparacuandoelladigaquesi()" id="btnNo">Si
+                <button id="movingButton">No</button>
+             <div>
+            <video src="e:\EDSON\DESCARGA\HACK\MEMI\vids\lv_7158109086922329345_20231225124817.mp4" alt="AMOR" width="680"  controls autoplay muted>
+           </div>
+
+           <script>
+            function accionparacuandoelladigaquesi(){
+             const respuesta = confirm("sabia que dirias que si")
+             if (respuesta) {
+                // redirecionar a la mueva pagina si responde "si"
+                window.location.href = "opcionsi.html"
+            } else {
+                alert("ERROR REINTENTE");  
+            }
+          }
+
+          function mueveelboton() {
+            const Width = window.innerWidth;
+            const Heigth = window.innerheigth;
+
+            const newWidth = math.random() * Width;
+            const newHeigth = math.random() * Heigth;
+
+            const btnNo = document.getElementById("btnNo");
+            btnNo.style.position = "absolute";
+            btnNo.style.left = newWidth + "px";
+            btnNo.style.top = newHeigth + "px";
+          }
+         
+          const button = document.getElementById('movingButton');
+
+         const screenWidth = window.innerWidth;
+         const screenHeight = window.innerHeight;
+
+         const buttonWidth = button.offsetWidth;
+         const buttonHeight = button.offsetHeight;
+
+         let posX = Math.random() * (screenWidth - buttonWidth);
+         let posY = Math.random() * (screenHeight - buttonHeight);
+
+         button.style.left = posX + 'px';
+         button.style.top = posY + 'px';
+
+         const moveButton = () => {
+         posX = Math.random() * (screenWidth - buttonWidth);
+         posY = Math.random() * (screenHeight - buttonHeight);
+  
+         button.style.left = posX + 'px';
+         button.style.top = posY + 'px';
+         button.style.backgroundColor = getRandomColor();
+         }
+        
+         function getRandomColor() {
+         const letters = '0123456789ABCDEF';
+         let color = '#';
+         for (let i = 0; i < 6; i++) {
+         color += letters[Math.floor(Math.random() * 13)];
+         }
+         return color;
+  }
+         
+         setInterval(moveButton, 200); // Cambia la posición cada 4 segundos
+
+          </script>
+       </body>
