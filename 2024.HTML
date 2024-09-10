@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta content="width=device-width, inical-scale=1.0"
+    title="tamos a 2024 clari que si ombe"><title="">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: teal;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            color: black
+            ;
+        }
+        p {
+            font-size: 23px;
+            color: black;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+    </head>
+             <div id="container">
+            <h1>cabe aclarar que esto nunca fue ninguna
+            propuesta para ser algo sino una promesa que 
+            nunca se ira...</h1>
+            <p>y aunque digas que no, en lo lo que 
+                va de vida aun estas conmigo </p>
+            <audio id="background-audio" >
+                <source src="e:\EDSON\APP\EDXSON03\vids\memi 4.mp3" type="audio/mpeg">
+            </audio>
+            <video src="e:\EDSON\APP\EDXSON03\vids\memi 3.mp4" alt="pareja feliz" width="380" heigth="490" controls autoplay muted=playsound, loop>
+            </div>
+
+    <script>
+        // JavaScript para comprobar si el audio se carga correctamente
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('background-audio');
+            audio.addEventListener('canplay', function() {
+                console.log('El audio está listo para reproducirse.');
+            }, false);
+
+            audio.addEventListener('error', function(e) {
+                console.error('Error al cargar el audio:', e);
+            }, false);
+        });
+    </script>
+
+</body>
+</html>
