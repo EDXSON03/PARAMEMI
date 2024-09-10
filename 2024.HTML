@@ -37,6 +37,12 @@
             max-width: 500px;
             margin: 0 auto;
         }
+        memi{
+            margin-top: 30px;
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(5, 5, 5, 0);
+            }
     </style>
     </head>
              <div id="container">
@@ -47,35 +53,11 @@
                 va de vida aun estas conmigo </p>
 
             </div>
-    
-            <!-- Reproductor de audio en bucle -->
-            <audio id="background-audio" autoplay loop>
-                <source src="memi 4.mp3" type="audio/mpeg">
-            </audio>
-            <video src="memi 3.mp4" alt="AMOR" justify-content: center;
-             width="360" heigth="480" controls autoplay muted>
+
+            <video id="memi" src="memi 3.mp4" alt="AMOR" width="360" heigth="480" controls autoplay muted>
 
             </video>
         
-            <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    var audio = document.getElementById('background-audio');
-        
-                    // Verifica si el audio se ha cargado correctamente
-                    audio.addEventListener('canplay', function() {
-                        console.log('El audio está listo para reproducirse.');
-                    }, false);
-        
-                    // Verifica errores en la carga del audio
-                    audio.addEventListener('error', function(e) {
-                        console.error('Error al cargar el audio:', e);
-                    }, false);
-        
-                    // Verifica el estado de reproducción
-                    audio.addEventListener('play', function() {
-                        console.log('El audio está reproduciéndose.');
-                    }, false);
-                });
-            </script>
+
         </body>
         </html>
