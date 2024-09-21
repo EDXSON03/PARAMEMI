@@ -18,20 +18,26 @@
             font-family: 'Times New Roman', Times, serif;
         }
 
+         .container {
+         text-align: center;
+         max-width: 1200px; /* Puedes ajustar este valor según tus preferencias */
+         margin: 0 auto;
+        padding: 20px;
+        }
         h1 {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 56px;
-            color: black
-            ;
+            font-size: 60px;
+            color: black;
+            font-style: italic ; 
+            margin: 0; /* Elimina el margen vertical */
         }
         h2 {
-            font-size: 41px;
-            color: black;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            max-width: 450px;
-            margin: 0 auto;
+            font-size: 20px;
+            color: rgb(58, 58, 58);
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 500px;
+            margin: 0 auto; 
         }
-            
+
         #button {
             margin-top: 30px;
             display: flex;
@@ -62,7 +68,7 @@
              cursor: pointer;
          }
          video {
-            margin-top: 50px;
+            margin-top: 30px;
             max-width: 80%;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
@@ -94,7 +100,7 @@
                 <buttono onclick="accionparacuandoelladigaquesi()" id="btnNo">Si
                 <button id="movingButton">No</button>
              <div>
-                <video src="memi 2.mp4" alt="pareja feliz" controls autoplay muted=playsound, loop>
+                <video src="memi 2.mp4" alt="pareja feliz" width="460" heigth="580" controls autoplay muted=playsound, loop>
            </div>
 
            <script>
